@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery zadanie!!!!! :>>>></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#button2").click(function(){
+            $("#div1").fadeOut("slow");
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut("slow");
+            $("h1").fadeOut("");
+            $("#button1").fadeIn();
+            $("#button2").fadeOut();
+          });
+        });
+        $(document).ready(function(){
+    $("#button1").click(function(){
+    $("#div1").fadeIn("slow");
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn("slow");
+    $("h1").fadeIn("");
+    $("#button2").fadeIn();
+    $("#button1").fadeOut();
+
+  });
+});
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+}); 
+$(document).ready(function(){
+  $("#cos").dblclick(function(){
+    $(this).hide();
+  });
+});
+        </script>
+        <style> 
+            #panel, #flip {
+              padding: 5px;
+              text-align: center;
+              background-color: #e5eecc;
+              border: solid 1px #c3c3c3;
+            }
+            
+            #panel {
+              padding: 50px;
+              display: none;
+            }
+            
+            </style>    
+</head>
+
+<body>
+    <p>Ciekawe co sie stanie jak mnie klikniesz</p>
+<p>Nie ma szansz ze mnie klikniesz</p>
+<p>Nie masz psychy mnie kliknac </p>
+    <button id="button1">Zobacz kolory</button><br><br>
+    <h1 style="display: none;">wiem ze moglem uzyc fadetoggle zamiast  fadein i fadeout</h1>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>    
+    <!-- Dzień dobry prosze Pana! :> Życze miłego dnia!!!! -->
+<button id="button2" style="display: none;">Schowaj kolory</button><br><br>
+
+<div id="flip">Kliknij to zejde albo wejde</div>
+<div id="panel">Hazard jest zly ale kodowanie jest dobre       !!!</div>
+<p>kliknij mnie raz a malpiszona dwa</p>
+<img src="https://pbs.twimg.com/profile_images/1497047238857699358/BYaFa0UQ_400x400.jpg" id="cos">
+</body>
+</html>
